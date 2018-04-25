@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 15a08c8055217d049a3040154ca82571
+timeCreated: 1524225695
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - foodPrefab: {instanceID: 0}
+  - currentFood: {instanceID: 0}
+  - snakePrefab: {instanceID: 0}
+  - head: {instanceID: 0}
+  - tail: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
