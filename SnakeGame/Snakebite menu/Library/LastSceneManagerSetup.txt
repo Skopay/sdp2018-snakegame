@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Menu/SnakebiteMainMenu.unity
-  isLoaded: 1
-  isActive: 1
