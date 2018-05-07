@@ -158,7 +158,7 @@ public class GameController : MonoBehaviour {
     }
 
     //Executes code depending on what object the Snake hit
-    void Hit(string WhatWasSent)
+    public void Hit(string WhatWasSent)
     {
         if(WhatWasSent == "Food")
         {
@@ -170,16 +170,16 @@ public class GameController : MonoBehaviour {
                 CancelInvoke("TimerInvoke");
                 InvokeRepeating("TimerInvoke", haultMovement, deltaTimer);
             }
-            FoodFunction();
+            //FoodFunction();
             maxSize++;
             score++;
-            scoreText.text = score.ToString();
+            /*scoreText.text = score.ToString();
             //Compares the current highscore to the current score and updates it if there is a change
             int temp = PlayerPrefs.GetInt("HighScore");
             if (score > temp)
             {
                 PlayerPrefs.SetInt("HighScore", score);
-            }
+            }*/
         }
         //Ends game if obstacle is hit
         if(WhatWasSent == "Snake" || WhatWasSent == "Wall")
