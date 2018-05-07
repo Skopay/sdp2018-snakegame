@@ -5,7 +5,20 @@ using System.Collections;
 
 public class ControlsTest {
 
+    //Unit test asserting that the NESW variable exists before
+    //running the MobileChangeDir method
 	[UnityTest]
+	public IEnumerator NESWAssigned(){
+		var controller = new GameController();
+
+		Assert.NotNull (controller.NESW);
+		yield return null;
+	}
+    
+    //Unit test asserting that the NESW is updated by the MobileChangeDir
+    //method if the direction is allowed
+    
+    [UnityTest]
 	public IEnumerator NESWMatchesDirectionOptions(){
 
 		var controller = new GameController();
@@ -15,16 +28,8 @@ public class ControlsTest {
 		yield return null;
 	}
 
-	[UnityTest]
-	public IEnumerator NESWAssigned(){
-		var controller = new GameController();
-
-		Assert.NotNull (controller.NESW);
-		yield return null;
-	}
-
 	//Attempt at writing a test for the Movement method, but as there is no
-	//getters or setters and the method is private, it doesn't not work.
+	//getters or setters and the method is private, it does not work.
 //	[UnityTest]
 //	public IEnumerator TestMovement(){
 //		var controller = new GameController();
