@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour {
     public int score;
     public Text scoreText;
     //Custom value for calculating the Snake's speed
-    public float deltaTimer;
+    public static float deltaTimer;
     //Used for placing the Food and Snake object in the correct X and Y coordinate
     public Vector2 newPos;
 
@@ -165,7 +165,7 @@ public class GameController : MonoBehaviour {
             //Increases Snake speed to a limit
             if (deltaTimer > .10000f)
             {
-                deltaTimer -= .0125000f;
+                //deltaTimer -= .0125000f;
                 float haultMovement = deltaTimer;
                 CancelInvoke("TimerInvoke");
                 InvokeRepeating("TimerInvoke", haultMovement, deltaTimer);
