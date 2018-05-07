@@ -7,7 +7,7 @@ public class Snake : MonoBehaviour{
     static public Action<String> hit;
 
     //When a collison occurs with an object the method will be run
-    void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if(hit != null)
         {
