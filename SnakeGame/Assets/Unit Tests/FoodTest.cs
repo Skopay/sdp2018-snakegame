@@ -12,7 +12,8 @@ public class FoodTest
         //This will create a new game object of the main game controller so methods can be called for testing
         var gameObject = new GameController();
 
-        //This will create a temp size variable of the Snake when it is initially spawned. The "Hit()" method is then called which should then
+        //This will create a temp size variable of the Snake when it is initially spawned. The "Hit()" method 
+		//is then called which should then
         //increase the size of the Snake. This is tested, and the test will pass if the above is true.
         int size = gameObject.maxSize;
         gameObject.Hit("Food");

@@ -1,8 +1,1 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/SnakebiteMainMenu.unity
-=======
-- path: Assets/InitTestScene636613006516308400.unity
->>>>>>> b9f7a43164599724bfdf604dd4a24ff5ab7088d0
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []
