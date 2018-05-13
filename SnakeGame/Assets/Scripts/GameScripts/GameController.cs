@@ -55,6 +55,13 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame. Checks for update on Snake's movement
     void Update () {
         KeyboardChangeDir();
+
+        if (!head.objectTag.Equals(""))
+        {
+            Hit(head.objectTag);
+            head.objectTag = "";
+        }
+        
 	}
 
     //Moves the Snake each frame by adding a 'head' in the chosen direction and removing the 'tail' as it moves.
@@ -170,16 +177,16 @@ public class GameController : MonoBehaviour {
                 CancelInvoke("TimerInvoke");
                 InvokeRepeating("TimerInvoke", haultMovement, deltaTimer);
             }
-            //FoodFunction();
+            FoodFunction();
             maxSize++;
             score++;
-            /*scoreText.text = score.ToString();
+            scoreText.text = score.ToString();
             //Compares the current highscore to the current score and updates it if there is a change
             int temp = PlayerPrefs.GetInt("HighScore");
             if (score > temp)
             {
                 PlayerPrefs.SetInt("HighScore", score);
-            }*/
+            }
         }
         //Ends game if obstacle is hit
         if(WhatWasSent == "Snake" || WhatWasSent == "Wall")
