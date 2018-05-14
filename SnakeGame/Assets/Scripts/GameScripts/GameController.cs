@@ -9,12 +9,9 @@ public class GameController : MonoBehaviour {
     public GameObject foodPrefab;
     public GameObject currentFood;
     public GameObject snakePrefab;
-    public GameObject wallNorth;
-    public GameObject wallSouth;
-    public GameObject wallEast;
-    public GameObject wallWest;
     public Snake head;
     public Snake tail;
+    public GameObject eastWall;
 
     //Public variables that'll help with the algorthm of the game
     //Bounds of which the food will spawn
@@ -42,9 +39,9 @@ public class GameController : MonoBehaviour {
     
     // Use this for initialization. Constantly repeats the TimerInvoke() method
     void Start () {
-        InvokeRepeating("TimerInvoke", 0, deltaTimer);
-        FoodFunction();
-	}
+        FoodFunction("Food");
+        InvokeRepeating("TimerInvoke", 1, deltaTimer);
+    }
 
     //Disables the Hit() script when it has finished running
     private void OnDisable()
@@ -55,14 +52,14 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame. Checks for update on Snake's movement
     void Update () {
         KeyboardChangeDir();
-
         if (!head.objectTag.Equals(""))
         {
-            Hit(head.objectTag);
-            head.objectTag = "";
+            Hit(head.objectTag); 
         }
-        
-	}
+        FoodFunction(head.objectTag);
+        head.objectTag = "";
+
+    }
 
     //Moves the Snake each frame by adding a 'head' in the chosen direction and removing the 'tail' as it moves.
     void TimerInvoke()
@@ -156,12 +153,15 @@ public class GameController : MonoBehaviour {
     }
 
     //Creates a new food object in the bounds of the camera
-    void FoodFunction()
+    void FoodFunction(string isFood)
     {
-        int xPos = Random.Range(-xBound, +xBound);
-        int yPos = Random.Range(-yBound, +yBound);
+        if (isFood == "Food")
+        {
+            int xPos = Random.Range(-xBound, +xBound);
+            int yPos = Random.Range(-yBound, +yBound);
 
-        currentFood = (GameObject)Instantiate(foodPrefab, new Vector2(xPos, yPos), transform.rotation);
+            currentFood = (GameObject)Instantiate(foodPrefab, new Vector2(xPos, yPos), transform.rotation);
+        }
     }
 
     //Executes code depending on what object the Snake hit
@@ -169,15 +169,13 @@ public class GameController : MonoBehaviour {
     {
         if(WhatWasSent == "Food")
         {
-            //Increases Snake speed to a limit
-            if (deltaTimer > .10000f)
+            //Increases Snake speed to a limit (used in "TimeAttack mode"
+            /*if (deltaTimer > .10000f)
             {
-                //deltaTimer -= .0125000f;
                 float haultMovement = deltaTimer;
                 CancelInvoke("TimerInvoke");
                 InvokeRepeating("TimerInvoke", haultMovement, deltaTimer);
-            }
-            FoodFunction();
+            }*/
             maxSize++;
             score++;
             scoreText.text = score.ToString();
