@@ -5,13 +5,14 @@ using System;
 public class Snake : MonoBehaviour{
     private Snake next;
     static public Action<String> hit;
+    public string objectTag = "";
 
     //When a collison occurs with an object the method will be run
     public void OnTriggerEnter(Collider other)
     {
         if(hit != null)
         {
-            hit(other.tag);
+            objectTag = other.tag;
         }
         //Destroys the current food object
         if(other.tag == "Food")

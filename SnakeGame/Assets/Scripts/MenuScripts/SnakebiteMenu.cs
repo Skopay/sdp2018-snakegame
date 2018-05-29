@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SnakebiteMenu : MonoBehaviour
 {
     public SettingsMenu settings;
+    public Text hS;
 
     //Initialises the settings on startup
     public void Start()
@@ -16,7 +18,7 @@ public class SnakebiteMenu : MonoBehaviour
     //Loads the game scene
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     //Exits the application
@@ -31,5 +33,10 @@ public class SnakebiteMenu : MonoBehaviour
     {
         settings.Start();
         settings.SetDifficulty();
+    }
+
+    void HSFunction()
+    {
+        hS.text = PlayerPrefs.GetInt("HighScore").ToString();
     }
 }
