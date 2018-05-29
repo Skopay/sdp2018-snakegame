@@ -18,7 +18,7 @@ public class SnakebiteMenu : MonoBehaviour
     //Loads the game scene
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     //Exits the application
