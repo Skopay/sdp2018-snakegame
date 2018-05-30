@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 sceneSetups:
 <<<<<<< HEAD
 - path: Assets/Scenes/SnakebiteMainMenu.unity
@@ -6,3 +7,6 @@ sceneSetups:
 >>>>>>> testing
   isLoaded: 1
   isActive: 1
+=======
+sceneSetups: []
+>>>>>>> parent of a3cffcc... Basic Pause Menu
