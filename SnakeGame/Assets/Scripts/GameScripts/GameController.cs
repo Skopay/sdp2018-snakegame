@@ -30,7 +30,6 @@ public class GameController : MonoBehaviour {
     //Used for placing the Food and Snake object in the correct X and Y coordinate
     public Vector3 newPos;
 
-
     //Runs the Hit() script when hit is activated
     private void OnEnable()
     {
