@@ -13,26 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
     y: 43
-<<<<<<< HEAD
-    width: 1536
-    height: 781
-=======
     width: 1280
     height: 637
->>>>>>> testing
-=======
-    x: 133
-    y: 49
-    width: 1280
-    height: 687
->>>>>>> parent of a3cffcc... Basic Pause Menu
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -52,30 +40,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1536
-    height: 731
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
-  vertical: 0
-  controlID: 9
-=======
     width: 1280
     height: 587
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 683, y: 342}
+  m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 113
->>>>>>> testing
-=======
-    width: 1280
-    height: 637
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
-  vertical: 0
-  controlID: 85
->>>>>>> parent of a3cffcc... Basic Pause Menu
+  controlID: 72
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,22 +62,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1003
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 336
-    height: 731
-=======
     width: 277
     height: 587
->>>>>>> testing
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-=======
-    width: 277
-    height: 637
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> parent of a3cffcc... Basic Pause Menu
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -129,24 +87,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 296
-    height: 460
+    width: 248
+    height: 316
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-=======
-    width: 202
-    height: 316
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> testing
-=======
-    width: 248
-    height: 366
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> parent of a3cffcc... Basic Pause Menu
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -167,27 +111,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 460
-    width: 1200
-=======
     y: 316
     width: 1003
->>>>>>> testing
-=======
-    y: 366
-    width: 1003
->>>>>>> parent of a3cffcc... Basic Pause Menu
     height: 271
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,19 +141,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1536
-    height: 781
-=======
     width: 1280
     height: 637
->>>>>>> testing
-=======
-    width: 1280
-    height: 687
->>>>>>> parent of a3cffcc... Basic Pause Menu
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -257,18 +181,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 761
-    width: 1536
-=======
     y: 617
     width: 1280
->>>>>>> testing
-=======
-    y: 667
-    width: 1280
->>>>>>> parent of a3cffcc... Basic Pause Menu
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -290,22 +204,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1200
-    height: 731
-=======
     width: 1003
     height: 587
->>>>>>> testing
-=======
-    width: 1003
-    height: 637
->>>>>>> parent of a3cffcc... Basic Pause Menu
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 86
+  controlID: 73
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,22 +228,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1200
-    height: 460
-=======
     width: 1003
     height: 316
->>>>>>> testing
-=======
-    width: 1003
-    height: 366
->>>>>>> parent of a3cffcc... Basic Pause Menu
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 87
+  controlID: 74
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -354,24 +248,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 296
-    y: 0
-    width: 904
-    height: 460
-=======
-    x: 202
-    y: 0
-    width: 801
-    height: 316
->>>>>>> testing
-=======
     x: 248
     y: 0
     width: 755
-    height: 366
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    height: 316
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
@@ -401,10 +281,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 384
-    y: 92
-    width: 617
-    height: 295
+    x: 468
+    y: 181
+    width: 973
+    height: 501
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -426,20 +306,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
-<<<<<<< HEAD
-    y: 552
-    width: 1198
-=======
     y: 408
     width: 1001
->>>>>>> testing
-=======
-    x: 133
-    y: 464
-    width: 1001
->>>>>>> parent of a3cffcc... Basic Pause Menu
     height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -454,51 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-<<<<<<< HEAD
-<<<<<<< HEAD
     - Assets/Scenes
-=======
-    - Assets/Perfabs
->>>>>>> testing
-=======
-    - Assets/Unit Tests
->>>>>>> parent of a3cffcc... Basic Pause Menu
   m_ViewMode: 1
-  m_StartGridSize: 68
+  m_StartGridSize: 64
   m_LastFolders:
-<<<<<<< HEAD
-<<<<<<< HEAD
   - Assets/Scenes
-=======
-  - Assets/Unit Tests
->>>>>>> parent of a3cffcc... Basic Pause Menu
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/william/Documents/GitHub/sdp2018-snakegame/SnakeGame
-  m_IsLocked: 0
-  m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 395}
-    m_SelectedIDs: 54340000
-    m_LastClickedID: 13396
-    m_ExpandedIDs: 000000009e280000382b00009c2e0000342f00007830000020320000cc320000f6370000f837000000ca9a3bffffff7f
-=======
-  - Assets/Perfabs
-  m_LastFoldersGridSize: 68
   m_LastProjectPath: C:\Users\hayde\OneDrive\Documents\GitHub\sdp2018-snakegame\SnakeGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 27}
-    m_SelectedIDs: 44340000
-    m_LastClickedID: 13380
-    m_ExpandedIDs: 000000005a2a0000662d0000a83300006c3900006e39000000ca9a3bffffff7f
->>>>>>> testing
-=======
-    scrollPos: {x: 0, y: 59}
-    m_SelectedIDs: 4a4f0000
-    m_LastClickedID: 20298
-    m_ExpandedIDs: 0000000016480000e64900005e4f0000325100003451000000ca9a3bffffff7f
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8e5b0000
+    m_LastClickedID: 23438
+    m_ExpandedIDs: 00000000fe5000002e530000a0590000c65b0000c85b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -514,7 +352,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -526,15 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 000000009e280000382b000020320000f6370000f8370000
-=======
-    m_ExpandedIDs: 000000005a2a0000662d0000a83300006c3900006e390000
->>>>>>> testing
-=======
-    m_ExpandedIDs: 0000000016480000e64900005e4f00003251000034510000
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    m_ExpandedIDs: 00000000fe5000002e530000a0590000c65b0000c85b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -559,19 +389,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-<<<<<<< HEAD
+    m_SelectedInstanceIDs: 74580000
+    m_LastClickedInstanceID: 22644
     m_HadKeyboardFocusLastEvent: 1
-<<<<<<< HEAD
-    m_ExpandedInstanceIDs: c623000028310000a8280000
-=======
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000000000000
->>>>>>> testing
-=======
     m_ExpandedInstanceIDs: c6230000
->>>>>>> parent of a3cffcc... Basic Pause Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -587,7 +408,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -596,17 +417,8 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-<<<<<<< HEAD
     m_GridSize: 64
-<<<<<<< HEAD
-  m_DirectoriesAreaWidth: 190
-=======
-    m_GridSize: 68
-  m_DirectoriesAreaWidth: 278
->>>>>>> testing
-=======
   m_DirectoriesAreaWidth: 115
->>>>>>> parent of a3cffcc... Basic Pause Menu
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -627,24 +439,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1202
-    y: 92
-    width: 334
-    height: 710
-=======
     x: 1005
     y: 92
     width: 275
     height: 566
->>>>>>> testing
-=======
-    x: 1138
-    y: 98
-    width: 275
-    height: 616
->>>>>>> parent of a3cffcc... Basic Pause Menu
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -675,65 +473,35 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
     y: 92
-<<<<<<< HEAD
-    width: 294
-    height: 439
-=======
-    x: 133
-    y: 98
     width: 246
-    height: 345
->>>>>>> parent of a3cffcc... Basic Pause Menu
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6a510000
-    m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 76e0f6ffcaf0f6ff72f8f6ff4207f7ff1e11f7ff2212f7ffce16f7ff1815f8ff963af8ff7841f8ffa046f8ffb84cf8ff0c23faff9029faff8034faff963bfaff4441faff5247faffa451fbff225afbff3a7dfbff7681fbffea93fbff0aa6fbffc4adfbff36b2fbff86cafbffaccbfbff74d3fbff020efcffc012fcffe82efcff2a35fcff0045fcff0650fcff0255fcff725afcffac5dfcff2267fcffc86bfcff6071fcffca76fcfff47cfcff7ea8fcff1cacfcff4eaefdffcac4fdfff8cafdff30c8ffffe8c9ffff5af2ffff5cf2ffff9efbffff000000002a380000a6380000e43b0000f4400000fe400000a4410000f845000002460000924600009c460000a8460000da4e0000804f00009a5a00005a6a00002873000032730000cc73000028740000107700001a770000b4770000c0770000e87f0000f27f00008c80000098800000ca88000064890000c08a0000808b0000809400008a94000024950000629d0000089e0000589e0000189f000040a100004aa10000e4a1000018aa000022aa0000bcaa0000eeaa0000ecb20000f8b2000092b30000babb0000c6bb000092c4000038c5000036d1000042d100006cd10000dcd10000fad100000ed20000f8dc0000b40b0100c00b01005a0c0100660c0100ca0d0100a21e0100ae1e0100501f01007c2e0100882e0100
-=======
-    width: 200
     height: 295
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: f0fbffff0000000096380000003900000a390000
->>>>>>> testing
-=======
-    m_ExpandedIDs: f08dffff0291ffffcc98ffffea9bffff8ca0ffff00000000
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    m_SelectedIDs: 885c0000
+    m_LastClickedID: 23688
+    m_ExpandedIDs: 0094ffff3295ffff2896ffff0e98ffff00000000745c0000de5c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: MenuBoundsWest
-      m_OriginalName: MenuBoundsWest
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 14506
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - SnakebiteMainMenu
-=======
   - NewMap
->>>>>>> testing
-=======
-  - 
->>>>>>> parent of a3cffcc... Basic Pause Menu
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -758,52 +526,20 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 298
+    x: 250
     y: 92
-    width: 900
-    height: 439
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_SceneLighting: 1
-  lastFramingTime: 4994.031107078636
-=======
-    x: 204
-    y: 92
-    width: 797
+    width: 751
     height: 295
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 852.1331035395486
->>>>>>> testing
-=======
-    x: 383
-    y: 98
-    width: 751
-    height: 345
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_SceneLighting: 1
-  lastFramingTime: 0
->>>>>>> parent of a3cffcc... Basic Pause Menu
+  lastFramingTime: 214.663912565111
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 429.61932, y: 221.95695, z: -4.7152114}
+    m_Target: {x: 0, y: -0.74178886, z: 80.006195}
     speed: 2
-    m_Value: {x: 429.61932, y: 221.95695, z: -4.7152114}
-=======
-    m_Target: {x: -2.905529, y: -1.0919268, z: 90.471954}
-    speed: 2
-    m_Value: {x: -2.905529, y: -1.0919268, z: 90.471954}
->>>>>>> testing
-=======
-    m_Target: {x: 0, y: 0, z: 0}
-    speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    m_Value: {x: 0, y: -0.74178886, z: 80.006195}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -835,21 +571,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: 502.8579
+    m_Target: 78.764
     speed: 2
-    m_Value: 502.8579
-=======
-    m_Target: 17.839474
-    speed: 2
-    m_Value: 17.839474
->>>>>>> testing
-=======
-    m_Target: 10
-    speed: 2
-    m_Value: 10
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    m_Value: 78.764
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -881,51 +605,23 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 298
-    y: 92
-    width: 900
-    height: 439
-=======
-    x: 204
-    y: 92
-    width: 797
-    height: 295
->>>>>>> testing
-=======
-    x: 148
+    x: 507
     y: 94
-    width: 751
-    height: 345
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    width: 1532
+    height: 790
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_HBaseRangeMin: -450
-    m_HBaseRangeMax: 450
-    m_VBaseRangeMin: -211
-    m_VBaseRangeMax: 211
-=======
-    m_HBaseRangeMin: -398.5
-    m_HBaseRangeMax: 398.5
-    m_VBaseRangeMin: -139
-    m_VBaseRangeMax: 139
->>>>>>> testing
-=======
-    m_HBaseRangeMin: -375.5
-    m_HBaseRangeMax: 375.5
-    m_VBaseRangeMin: -164
-    m_VBaseRangeMax: 164
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    m_HBaseRangeMin: -766
+    m_HBaseRangeMax: 766
+    m_VBaseRangeMin: -386.5
+    m_VBaseRangeMax: 386.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -934,7 +630,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -942,61 +638,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-<<<<<<< HEAD
-<<<<<<< HEAD
-      width: 900
-      height: 422
+      width: 1532
+      height: 773
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 450, y: 211}
-=======
-      width: 797
-      height: 278
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 398.5, y: 139}
->>>>>>> testing
-=======
-      width: 751
-      height: 328
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 375.5, y: 164}
->>>>>>> parent of a3cffcc... Basic Pause Menu
+    m_Translation: {x: 766, y: 386.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-      x: -450
-      y: -211
-      width: 900
-      height: 422
-=======
-      x: -398.5
-      y: -139
-      width: 797
-      height: 278
->>>>>>> testing
-=======
-      x: -375.5
-      y: -164
-      width: 751
-      height: 328
->>>>>>> parent of a3cffcc... Basic Pause Menu
+      x: -766
+      y: -386.5
+      width: 1532
+      height: 773
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LastWindowPixelSize: {x: 900, y: 439}
-=======
-  m_LastWindowPixelSize: {x: 797, y: 295}
->>>>>>> testing
-=======
-  m_LastWindowPixelSize: {x: 1502, y: 690}
->>>>>>> parent of a3cffcc... Basic Pause Menu
+  m_CurrentColorSpace: 1
+  m_LastWindowPixelSize: {x: 1532, y: 790}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1022,6 +682,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 408
-    width: 948
+    width: 1001
     height: 250
   m_PersistentViewDataDictionary: {fileID: 0}

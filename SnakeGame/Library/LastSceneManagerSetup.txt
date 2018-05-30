@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/SnakebiteMainMenu.unity
-=======
 - path: Assets/Scenes/NewMap.unity
->>>>>>> testing
   isLoaded: 1
   isActive: 1
-=======
-sceneSetups: []
->>>>>>> parent of a3cffcc... Basic Pause Menu
