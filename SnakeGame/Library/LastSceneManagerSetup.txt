@@ -1,8 +1,12 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/NewMap.unity
 =======
 - path: Assets/Scenes/SnakebiteMainMenu.unity
 >>>>>>> master
+=======
+- path: Assets/Scenes/GameScene.unity
+>>>>>>> parent of d8cef68... Walls walls walls
   isLoaded: 1
   isActive: 1

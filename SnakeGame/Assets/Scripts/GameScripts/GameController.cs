@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour {
     //Custom value for calculating the Snake's speed
     public static float deltaTimer;
     //Used for placing the Food and Snake object in the correct X and Y coordinate
-    public Vector3 newPos;
+    public Vector2 newPos;
 
     //Runs the Hit() script when hit is activated
     private void OnEnable()
@@ -40,7 +40,6 @@ public class GameController : MonoBehaviour {
     void Start () {
         FoodFunction("Food");
         InvokeRepeating("TimerInvoke", 1, deltaTimer);
-        Debug.Log(eastWall.transform.position.z);
     }
 
     //Disables the Hit() script when it has finished running
@@ -83,16 +82,16 @@ public class GameController : MonoBehaviour {
         switch (NESW)
         {
             case 0:
-                newPos = new Vector3(newPos.x, newPos.y + 1, 90);
+                newPos = new Vector2(newPos.x, newPos.y + 1);
                 break;
             case 1:
-                newPos = new Vector3(newPos.x + 1, newPos.y, 90);
+                newPos = new Vector2(newPos.x + 1, newPos.y);
                 break;
             case 2:
-                newPos = new Vector3(newPos.x, newPos.y - 1, 90);
+                newPos = new Vector2(newPos.x, newPos.y - 1);
                 break;
             case 3:
-                newPos = new Vector3(newPos.x - 1, newPos.y, 90);
+                newPos = new Vector2(newPos.x - 1, newPos.y);
                 break;
         }
         temp = (GameObject)Instantiate(snakePrefab, newPos, transform.rotation);
@@ -160,7 +159,7 @@ public class GameController : MonoBehaviour {
             int xPos = Random.Range(-xBound, +xBound);
             int yPos = Random.Range(-yBound, +yBound);
 
-            currentFood = (GameObject)Instantiate(foodPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
+            currentFood = (GameObject)Instantiate(foodPrefab, new Vector2(xPos, yPos), transform.rotation);
         }
     }
 

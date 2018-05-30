@@ -6,12 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/SnakebiteMainMenu.unity
     guid: 8746556c135b13445872deebbe388c28
   - enabled: 1
-    path: Assets/Scenes/BasicMap.unity
+    path: Assets/Scenes/GameScene.unity
     guid: 723b4e26364918c46ad9bce72727dcc8
-  - enabled: 1
-    path: Assets/Scenes/NewMap.unity
-    guid: e46eda1b41aa9d44487da18899625989
-  m_configObjects: {}
