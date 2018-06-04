@@ -13,6 +13,7 @@ public class SnakebiteMenu : MonoBehaviour
     public void Start()
     {
         InitialiseSettings();
+        PlayerPrefs.GetFloat("Speed");
     }
 
     //Loads the game scene

@@ -17,7 +17,7 @@ public class SettingsMenu : MonoBehaviour
     //Sets default values for settings
     public void Start()
     {
-        difficulty.value = 0.475f;
+        difficulty.value = PlayerPrefs.GetFloat("Speed");
         volume.value = 5.0f;
     }
 
@@ -26,7 +26,7 @@ public class SettingsMenu : MonoBehaviour
     {
         //audioMixer.SetFloat("MasterVolume", volume);
         source.volume = volume;
-        Debug.Log(volume);
+        //Debug.Log(volume);
         MuteGame();
     }
 
@@ -54,7 +54,7 @@ public class SettingsMenu : MonoBehaviour
     public void SetDifficulty()
     {
         GameController.deltaTimer = difficulty.value;
-        Debug.Log(difficulty.value);
+        PlayerPrefs.SetFloat("Speed", GameController.deltaTimer);
+        //Debug.Log(difficulty.value);
     }
-
 }

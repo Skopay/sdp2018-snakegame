@@ -40,8 +40,9 @@ public class GameController : MonoBehaviour {
     // Use this for initialization. Constantly repeats the TimerInvoke() method
     void Start () {
         FoodFunction("Food");
-        InvokeRepeating("TimerInvoke", 1, deltaTimer);
+        InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
         Debug.Log(eastWall.transform.position.z);
+        Debug.Log("Speed" +PlayerPrefs.GetFloat("Speed"));
     }
 
     //Disables the Hit() script when it has finished running
@@ -206,6 +207,14 @@ public class GameController : MonoBehaviour {
     {
         SceneManager.LoadScene(0);
     }
+
+    /*public void RestartGame()
+    {
+        FoodFunction("Food");
+        InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
+        Debug.Log(eastWall.transform.position.z);
+        Debug.Log("Speed" + PlayerPrefs.GetFloat("Speed"));
+    }*/
 
     //Two methods that manipulate the camera to mimick the Snake going through one side of the screen and coming out opposite side.
     /*void Wrap()
