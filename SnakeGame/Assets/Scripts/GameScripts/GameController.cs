@@ -8,12 +8,13 @@ public class GameController : MonoBehaviour {
     //All the game objects used within the game
     public GameObject foodPrefab;
     public GameObject currentFood;
+    public GameObject powerup;
+    public GameObject powerupPrefab;
     public GameObject snakePrefab;
     public Snake head;
     public Snake tail;
-    public GameObject eastWall;
 
-    //Public variables that'll help with the algorthm of the game
+    //Public variables that'll help with the algorithm of the game
     //Bounds of which the food will spawn
     public int xBound;
     public int yBound;
@@ -29,6 +30,8 @@ public class GameController : MonoBehaviour {
     public static float deltaTimer;
     //Used for placing the Food and Snake object in the correct X and Y coordinate
     public Vector3 newPos;
+    //Powerups
+    public bool isInvincible;
 
 
     //Runs the Hit() script when hit is activated
@@ -41,8 +44,6 @@ public class GameController : MonoBehaviour {
     void Start () {
         FoodFunction("Food");
         InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
-        Debug.Log(eastWall.transform.position.z);
-        Debug.Log("Speed" +PlayerPrefs.GetFloat("Speed"));
     }
 
     //Disables the Hit() script when it has finished running
@@ -54,13 +55,7 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame. Checks for update on Snake's movement
     void Update () {
         KeyboardChangeDir();
-        if (!head.objectTag.Equals(""))
-        {
-            Hit(head.objectTag); 
-        }
-        FoodFunction(head.objectTag);
-        head.objectTag = "";
-
+        CheckWhatWasHit();
     }
 
     //Moves the Snake each frame by adding a 'head' in the chosen direction and removing the 'tail' as it moves.
@@ -75,6 +70,17 @@ public class GameController : MonoBehaviour {
         {
             currentSize++;
         }
+    }
+
+    void CheckWhatWasHit()
+    {
+        if (!head.objectTag.Equals(""))
+        {
+            Hit(head.objectTag);
+        }
+        FoodFunction(head.objectTag);
+        //insert powerup creation and put 15 second timer
+        head.objectTag = "";
     }
 
     //Calculates the button pressed and moves the Snake accordingly
@@ -166,10 +172,21 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    //Executes code depending on what object the Snake hit
-    public void Hit(string WhatWasSent)
+    void PowerupFunction(string isPowerup)
     {
-        if(WhatWasSent == "Food")
+        if (isPowerup == "Invincibility")
+        {
+            int xPos = Random.Range(-xBound, +xBound);
+            int yPos = Random.Range(-yBound, +yBound);
+
+            powerup = (GameObject)Instantiate(powerupPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
+        }
+    }
+
+        //Executes code depending on what object the Snake hit
+        public void Hit(string whatWasSent)
+    {
+        if (whatWasSent == "Food")
         {
             //Increases Snake speed to a limit (used in "TimeAttack mode"
             /*if (deltaTimer > .10000f)
@@ -188,15 +205,26 @@ public class GameController : MonoBehaviour {
                 PlayerPrefs.SetInt("HighScore", score);
             }
         }
+        else if (whatWasSent == "Invincibility")
+        {
+            
+            isInvincible = true;
+            //count a timer for 5 seconds on screen
+            isInvincible = false;
+        }
+
         //Ends game if obstacle is hit
-        if(WhatWasSent == "Snake" || WhatWasSent == "Wall")
+        else if (whatWasSent == "Snake")
         {
             //Idea for 'power up' code
-            /*if (powerUpInvis == true) 
+            if(isInvincible == false)
             {
-                return;
-                
-            }*/
+                CancelInvoke("TimerInvoke");
+                Exit();
+            }
+        }
+        else if (whatWasSent == "Wall")
+        {
             CancelInvoke("TimerInvoke");
             Exit();
         }
