@@ -3,7 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameController : MonoBehaviour {
+public class GameController : MonoBehaviour
+{
 
     //All the game objects used within the game
     public GameObject foodPrefab;
@@ -32,17 +33,20 @@ public class GameController : MonoBehaviour {
     public Vector3 newPos;
     //Powerups
     public bool isInvincible;
-
+    public float powerupCountdownValue;
+    public Text powerupTimer;
 
     //Runs the Hit() script when hit is activated
     private void OnEnable()
     {
         Snake.hit += Hit;
     }
-    
+
     // Use this for initialization. Constantly repeats the TimerInvoke() method
-    void Start () {
+    void Start()
+    {
         FoodFunction("Food");
+        PowerupFunction();
         InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
     }
 
@@ -53,7 +57,8 @@ public class GameController : MonoBehaviour {
     }
 
     // Update is called once per frame. Checks for update on Snake's movement
-    void Update () {
+    void Update()
+    {
         KeyboardChangeDir();
         CheckWhatWasHit();
     }
@@ -63,10 +68,11 @@ public class GameController : MonoBehaviour {
     {
         Movement();
         //StartCoroutine(CheckVisable());
-        if(currentSize >= maxSize)
+        if (currentSize >= maxSize)
         {
             TailFunction();
-        }else
+        }
+        else
         {
             currentSize++;
         }
@@ -79,12 +85,12 @@ public class GameController : MonoBehaviour {
             Hit(head.objectTag);
         }
         FoodFunction(head.objectTag);
-        //insert powerup creation and put 15 second timer
         head.objectTag = "";
     }
 
     //Calculates the button pressed and moves the Snake accordingly
-    void Movement() {
+    void Movement()
+    {
         GameObject temp;
         newPos = head.transform.position;
 
@@ -113,7 +119,7 @@ public class GameController : MonoBehaviour {
     //Movement method for keyboard based devices
     void KeyboardChangeDir()
     {
-        if(NESW != 2 && Input.GetKeyDown(KeyCode.W))
+        if (NESW != 2 && Input.GetKeyDown(KeyCode.W))
         {
             NESW = 0;
         }
@@ -138,7 +144,7 @@ public class GameController : MonoBehaviour {
         {
             NESW = 0;
         }
-        if (NESW != 3 && direction == 1 )
+        if (NESW != 3 && direction == 1)
         {
             NESW = 1;
         }
@@ -172,19 +178,17 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    void PowerupFunction(string isPowerup)
+    void PowerupFunction()
     {
-        if (isPowerup == "Invincibility")
-        {
             int xPos = Random.Range(-xBound, +xBound);
             int yPos = Random.Range(-yBound, +yBound);
 
             powerup = (GameObject)Instantiate(powerupPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
-        }
+     
     }
 
-        //Executes code depending on what object the Snake hit
-        public void Hit(string whatWasSent)
+    //Executes code depending on what object the Snake hit
+    public void Hit(string whatWasSent)
     {
         if (whatWasSent == "Food")
         {
@@ -207,17 +211,17 @@ public class GameController : MonoBehaviour {
         }
         else if (whatWasSent == "Invincibility")
         {
-            
+
             isInvincible = true;
-            //count a timer for 5 seconds on screen
-            isInvincible = false;
+            StartCoroutine(PowerupCountdown());
+            
         }
 
         //Ends game if obstacle is hit
         else if (whatWasSent == "Snake")
         {
             //Idea for 'power up' code
-            if(isInvincible == false)
+            if (isInvincible == false)
             {
                 CancelInvoke("TimerInvoke");
                 Exit();
@@ -235,6 +239,24 @@ public class GameController : MonoBehaviour {
     {
         SceneManager.LoadScene(0);
     }
+
+    public IEnumerator PowerupCountdown(float countdownValue = 10)
+    {
+        powerupTimer.text = "Invincibility: 10";
+        powerupCountdownValue = countdownValue;
+        while (powerupCountdownValue > 0)
+        {
+            yield return new WaitForSeconds(1.0f);
+            powerupCountdownValue--;
+            powerupTimer.text = "Invincibility: " + powerupCountdownValue.ToString();
+        }
+        isInvincible = false;
+        yield return new WaitForSeconds(1.0f);
+        powerupTimer.text = "";
+        yield return new WaitForSeconds(10.0f);
+        PowerupFunction();
+    }
+
 
     /*public void RestartGame()
     {
@@ -264,7 +286,7 @@ public class GameController : MonoBehaviour {
             head.transform.position = new Vector2(-(head.transform.position.x + 1), head.transform.position.y);
         }
     }
-    
+
     IEnumerator CheckVisable()
     {
         yield return new WaitForEndOfFrame();
