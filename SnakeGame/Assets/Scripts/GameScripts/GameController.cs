@@ -48,6 +48,15 @@ public class GameController : MonoBehaviour
         FoodFunction("Food");
         PowerupFunction();
         InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
+
+        //This is the code that'll decide if you're playing the normal gamemode or if you're playing "Speedattack", once this if statement
+        //has been corrected, then you can uncomment 203 also which will be all the code needed for "Speedattack"
+        /*if (normal mode was selected) {
+            InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
+        }
+        else if (speedattack mode was selected) {
+            InvokeRepeating("TimerInvoke", 1, deltaTimer;
+        }*/
     }
 
     //Disables the Hit() script when it has finished running
@@ -67,7 +76,7 @@ public class GameController : MonoBehaviour
     void TimerInvoke()
     {
         Movement();
-        //StartCoroutine(CheckVisable());
+        StartCoroutine(CheckVisable()); 
         if (currentSize >= maxSize)
         {
             TailFunction();
@@ -192,13 +201,17 @@ public class GameController : MonoBehaviour
     {
         if (whatWasSent == "Food")
         {
-            //Increases Snake speed to a limit (used in "TimeAttack mode"
-            /*if (deltaTimer > .10000f)
+            //Increases Snake speed to a limit (used in "Speedattack mode"
+            /*
+             if (speedattack mode was chosen){
+             if (deltaTimer > .10000f)
             {
                 float haultMovement = deltaTimer;
                 CancelInvoke("TimerInvoke");
                 InvokeRepeating("TimerInvoke", haultMovement, deltaTimer);
+            }
             }*/
+
             maxSize++;
             score++;
             scoreText.text = score.ToString();
@@ -251,8 +264,8 @@ public class GameController : MonoBehaviour
         PowerupFunction();
     }
 
-    //Two methods that manipulate the camera to mimick the Snake going through one side of the screen and coming out opposite side.
-    /*void Wrap()
+    //Two methods that manipulate the camera to mimick the Snake going through one side of the screen and coming out opposite side
+    void Wrap()
     {
         if(NESW == 0)
         {
@@ -279,5 +292,5 @@ public class GameController : MonoBehaviour
         {
             Wrap();
         }
-    }*/
+    }
 }

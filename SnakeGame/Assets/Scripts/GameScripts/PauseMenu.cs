@@ -34,7 +34,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1.0f; //Sets time to normal speed
         CancelInvoke("TimerInvoke");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     //Exits to the main menu
