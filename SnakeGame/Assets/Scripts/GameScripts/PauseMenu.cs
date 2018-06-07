@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 //Controls the functionality of the pause menu
 public class PauseMenu : MonoBehaviour
 {
-    public GameController controller = new GameController();
     public GameObject pauseMenuUI; //Canvas of the pause menu
     public Button restart; //Restart button on the pause menu
     public Button resume; //Resume button on the pause menu
@@ -17,29 +16,32 @@ public class PauseMenu : MonoBehaviour
     //Makes the pause menu appear when the pause button is selected
     public void Pause()
     {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f; //Freezes time
         gameIsPaused = true;
+        pauseMenuUI.SetActive(gameIsPaused);
+        Time.timeScale = 0f; //Freezes time
     }
 
     //Resumes the current game
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1.0f; //Sets time to normal speed
         gameIsPaused = false;
+        pauseMenuUI.SetActive(gameIsPaused);
+        Time.timeScale = 1.0f; //Sets time to normal speed
     }
 
     //Restarts the current game
     public void Restart()
     {
-        //controller.RestartGame();
-        SceneManager.LoadScene(2);
+        Time.timeScale = 1.0f; //Sets time to normal speed
+        CancelInvoke("TimerInvoke");
+        SceneManager.LoadScene(1);
     }
 
     //Exits to the main menu
     public void Exit()
     {
+        Time.timeScale = 1.0f; //Sets time to normal speed
+        CancelInvoke("TimerInvoke");
         SceneManager.LoadScene(0);
     }
 }

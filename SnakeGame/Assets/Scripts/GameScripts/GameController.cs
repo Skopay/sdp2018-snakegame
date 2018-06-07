@@ -224,20 +224,14 @@ public class GameController : MonoBehaviour
             if (isInvincible == false)
             {
                 CancelInvoke("TimerInvoke");
-                Exit();
+                SceneManager.LoadScene(0);
             }
         }
         else if (whatWasSent == "Wall")
         {
             CancelInvoke("TimerInvoke");
-            Exit();
+            SceneManager.LoadScene(0);
         }
-    }
-
-    //Upon clicking the exit button you will be returned to the Main Menu
-    public void Exit()
-    {
-        SceneManager.LoadScene(0);
     }
 
     public IEnumerator PowerupCountdown(float countdownValue = 10)
@@ -256,15 +250,6 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(10.0f);
         PowerupFunction();
     }
-
-
-    /*public void RestartGame()
-    {
-        FoodFunction("Food");
-        InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
-        Debug.Log(eastWall.transform.position.z);
-        Debug.Log("Speed" + PlayerPrefs.GetFloat("Speed"));
-    }*/
 
     //Two methods that manipulate the camera to mimick the Snake going through one side of the screen and coming out opposite side.
     /*void Wrap()
