@@ -207,8 +207,8 @@ public class GameController : MonoBehaviour
 
     void PowerupFunction()
     {
-            int xPos = 0;
-            int yPos = 0;
+        int xPos = 0;
+        int yPos = 0;
 
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
@@ -227,7 +227,8 @@ public class GameController : MonoBehaviour
             xPos = Random.Range(-xBound, +xBound);
             yPos = Random.Range(-yBound, +yBound);
         }
-            powerup = (GameObject)Instantiate(powerupPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
+
+        powerup = (GameObject)Instantiate(powerupPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
         
     }
 
