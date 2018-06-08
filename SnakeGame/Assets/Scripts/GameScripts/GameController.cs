@@ -180,8 +180,26 @@ public class GameController : MonoBehaviour
     {
         if (isFood == "Food")
         {
-            int xPos = Random.Range(-xBound, +xBound);
-            int yPos = Random.Range(-yBound, +yBound);
+            int xPos = 0;
+            int yPos = 0;
+
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                do
+                {
+                    xPos = Random.Range(-xBound, +xBound);
+                    yPos = Random.Range(-yBound, +yBound);
+                } while ((yPos == -3 && xPos == 7) || (yPos == -3 && xPos == 8) || (yPos == -3 && xPos == 6) || (yPos == -3 && xPos == -7) || (yPos == -3 && xPos == -8) || (yPos == -3 && xPos == -6)
+                || (yPos == -3 && xPos == 11) || (yPos == -3 && xPos == -11) || (yPos == -1 && xPos == 9) || (yPos == -1 && xPos == -9) || (yPos == -1 && xPos == 6) || (yPos == -1 && xPos == -6)
+                || (yPos == -2 && xPos == 0) || (yPos == 1 && xPos == -7) || (yPos == 1 && xPos == 7) || (yPos == 2 && xPos == 3) || (yPos == 2 && xPos == -3) || (yPos == 2 && xPos == 10)
+                || (yPos == 2 && xPos == -10) || (yPos == 0 && xPos == 3) || (yPos == 0 && xPos == -3) || (yPos == -4 && xPos == 0) || (xPos == -2 && yPos == 2) || (xPos == -4 && yPos == 2)
+                || (yPos == 0 && xPos == 12) || (yPos == 0 && xPos == -12) || (xPos == -1 && yPos == -2) || (xPos == 1 && yPos == -2) || (xPos == 2 && yPos == 2) || (xPos == 4 && yPos == 2));
+            }
+            else
+            {
+                xPos = Random.Range(-xBound, +xBound);
+                yPos = Random.Range(-yBound, +yBound);
+            }
 
             currentFood = (GameObject)Instantiate(foodPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
         }
@@ -189,11 +207,28 @@ public class GameController : MonoBehaviour
 
     void PowerupFunction()
     {
-            int xPos = Random.Range(-xBound, +xBound);
-            int yPos = Random.Range(-yBound, +yBound);
+            int xPos = 0;
+            int yPos = 0;
 
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            do
+            {
+                xPos = Random.Range(-xBound, +xBound);
+                yPos = Random.Range(-yBound, +yBound);
+            } while ((yPos == -3 && xPos == 7) || (yPos == -3 && xPos == 8) || (yPos == -3 && xPos == 6) || (yPos == -3 && xPos == -7) || (yPos == -3 && xPos == -8) || (yPos == -3 && xPos == -6)
+            || (yPos == -3 && xPos == 11) || (yPos == -3 && xPos == -11) || (yPos == -1 && xPos == 9) || (yPos == -1 && xPos == -9) || (yPos == -1 && xPos == 6) || (yPos == -1 && xPos == -6)
+            || (yPos == -2 && xPos == 0) || (yPos == 1 && xPos == -7) || (yPos == 1 && xPos == 7) || (yPos == 2 && xPos == 3) || (yPos == 2 && xPos == -3) || (yPos == 2 && xPos == 10)
+            || (yPos == 2 && xPos == -10) || (yPos == 0 && xPos == 3) || (yPos == 0 && xPos == -3) || (yPos == -4 && xPos == 0) || (xPos == -2 && yPos == 2) || (xPos == -4 && yPos == 2)
+            || (yPos == 0 && xPos == 12) || (yPos == 0 && xPos == -12) || (xPos == -1 && yPos == -2) || (xPos == 1 && yPos == -2) || (xPos == 2 && yPos == 2) || (xPos == 4 && yPos == 2));
+        }
+        else
+        {
+            xPos = Random.Range(-xBound, +xBound);
+            yPos = Random.Range(-yBound, +yBound);
+        }
             powerup = (GameObject)Instantiate(powerupPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
-     
+        
     }
 
     //Executes code depending on what object the Snake hit
@@ -260,7 +295,7 @@ public class GameController : MonoBehaviour
         isInvincible = false;
         yield return new WaitForSeconds(1.0f);
         powerupTimer.text = "";
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(20.0f);
         PowerupFunction();
     }
 
