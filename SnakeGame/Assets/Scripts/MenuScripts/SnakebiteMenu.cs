@@ -16,12 +16,6 @@ public class SnakebiteMenu : MonoBehaviour
         PlayerPrefs.GetFloat("Speed");
     }
 
-    //Loads the game scene
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(1);
-    }
-
     //Exits the application
     public void QuitGame()
     {
