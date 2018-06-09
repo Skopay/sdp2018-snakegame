@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
     public Snake head;
     public Snake tail;
     public GameObject gameOverPanel;
+    public GameObject arcadeInfo;
 
     //Public variables that'll help with the algorithm of the game
     //Bounds of which the food will spawn
@@ -40,12 +41,9 @@ public class GameController : MonoBehaviour
     public bool isInvincible;
     public float powerupCountdownValue;
     public Text powerupTimer;
-
-    //Game mode reference
-    public static int gameMode;
-
     //gamemode value, 1 = arcade, 2 = classic, 3 = speedattack
     public float arcadeSpeed;
+    public float speedAttackSpeed;
 
 
     //Runs the Hit() script when hit is activated
@@ -57,23 +55,28 @@ public class GameController : MonoBehaviour
     // Use this for initialization. Constantly repeats the TimerInvoke() method
     void Start()
     {
-        arcadeSpeed = PlayerPrefs.GetFloat("Speed");
-        InvokeRepeating("TimerInvoke", 1, arcadeSpeed);
-        FoodFunction();
-        SpawnPowerup();
-
         //This is the code that'll decide if you're playing the normal gamemode or if you're playing "Speedattack", once this if statement
         //has been corrected, then you can uncomment 203 also which will be all the code needed for "Speedattack"
-        if (gameMode == 1) {
-            InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
-        }
-        else if (gameMode == 2) {
-        float arcadeSpeed = PlayerPrefs.GetFloat("Speed");
-            InvokeRepeating("TimerInvoke", 1, arcadeSpeed);
-        }
-        else if (gameMode == 3)
+        if (GameModesMenu.gameMode == 1 || GameModesMenu.gameMode == 0)
         {
-        InvokeRepeating("TimerInvoke", 1, deltaTimer);
+            InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
+            FoodFunction();
+        }
+        else if (GameModesMenu.gameMode == 2)
+        {
+            float arcadeSpeed = PlayerPrefs.GetFloat("Speed");
+
+            Time.timeScale = 0f;
+            arcadeInfo.SetActive(true);
+            Debug.Log("activated");
+            InvokeRepeating("TimerInvoke", 1, arcadeSpeed);
+            FoodFunction();
+            SpawnPowerup();
+        }
+        else if (GameModesMenu.gameMode == 3)
+        {
+            InvokeRepeating("TimerInvoke", 1, speedAttackSpeed);
+            FoodFunction();
         }
     }
 
@@ -103,6 +106,13 @@ public class GameController : MonoBehaviour
         {
             currentSize++;
         }
+    }
+
+    public void Continue()
+    {
+        Time.timeScale = 1.0f;
+        arcadeInfo.SetActive(false);
+        Debug.Log("activatedsdsads");
     }
 
     void CheckWhatWasHit()
@@ -197,35 +207,28 @@ public class GameController : MonoBehaviour
     {
         string randomPowerupString = "";
         int randomPowerup = 0;
-        if (gameMode == 2)
+        if (arcadeSpeed <= .10000f)
         {
-            if (arcadeSpeed <= .10000f)
-            {
-                randomPowerup = Random.Range(1, 5);
-            }
-            else
-            {
-                randomPowerup = Random.Range(1, 7);
-            }
-
-            Debug.Log(arcadeSpeed);
-            Debug.Log(randomPowerup);
-
-            if (randomPowerup == 1 || randomPowerup == 3)
-            {
-                randomPowerupString = "invincibility";
-            }
-            else if (randomPowerup == 2 || randomPowerup == 4)
-            {
-                randomPowerupString = "random";
-            }
-            else if (randomPowerup == 5 || randomPowerup == 6)
-            {
-                randomPowerupString = "increaseSpeed";
-            }
-            Debug.Log(randomPowerupString);
-            PowerupFunction(randomPowerupString);
+            randomPowerup = Random.Range(1, 5);
         }
+        else
+        {
+            randomPowerup = Random.Range(1, 7);
+        }
+
+        if (randomPowerup == 1 || randomPowerup == 3)
+        {
+            randomPowerupString = "invincibility";
+        }
+        else if (randomPowerup == 2 || randomPowerup == 4)
+        {
+            randomPowerupString = "random";
+        }
+        else if (randomPowerup == 5 || randomPowerup == 6)
+        {
+            randomPowerupString = "increaseSpeed";
+        }
+        PowerupFunction(randomPowerupString);
     }
 
     //Creates a new food object in the bounds of the camera
@@ -234,7 +237,7 @@ public class GameController : MonoBehaviour
         int xPos = 0;
         int yPos = 0;
 
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             do
             {
@@ -253,20 +256,18 @@ public class GameController : MonoBehaviour
             yPos = Random.Range(-yBound, +yBound);
         }
 
-        Debug.Log("Food spawn");
-        Debug.Log(xPos);
-        Debug.Log(yPos);
-        currentFood = (GameObject)Instantiate(foodPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
-
+        if (xPos != 1000)
+        {
+            currentFood = (GameObject)Instantiate(foodPrefab, new Vector3(xPos, yPos, 90), transform.rotation);
+        }
     }
-
 
     void PowerupFunction(string whatPowerup)
     {
         int xPos = 0;
         int yPos = 0;
 
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             do
             {
@@ -306,20 +307,19 @@ public class GameController : MonoBehaviour
         if (whatWasSent == "Food")
         {
             //Increases Snake speed to a limit (used in "Speedattack mode"
-            /*
-             if (gameMode == 3){
-             if (deltaTimer > .10000f)
-            {
-                deltaTime -= .05000;
-                float haultMovement = deltaTimer;
-                CancelInvoke("TimerInvoke");
-                InvokeRepeating("TimerInvoke", haultMovement, deltaTimer);
-            }
-            }*/
 
+            if (GameModesMenu.gameMode == 3)
+            {
+                if (speedAttackSpeed > .10000f)
+                {
+                    speedAttackSpeed -= (float).02000;
+                    float haultMovement = speedAttackSpeed;
+                    CancelInvoke("TimerInvoke");
+                    InvokeRepeating("TimerInvoke", haultMovement, speedAttackSpeed);
+                }
+            }
             maxSize++;
             score++;
-            Debug.Log(score);
             scoreText.text = score.ToString();
             pauseScoreText.text = score.ToString();
             finalScoreText.text = score.ToString();
@@ -334,10 +334,8 @@ public class GameController : MonoBehaviour
         }
         else if (whatWasSent == "Invincibility")
         {
-
             isInvincible = true;
             StartCoroutine(InvincibilityCountdown());
-
         }
         else if (whatWasSent == "IncreaseSpeed")
         {
@@ -360,6 +358,8 @@ public class GameController : MonoBehaviour
             {
                 score = score + 5;
                 scoreText.text = score.ToString();
+                pauseScoreText.text = score.ToString();
+                finalScoreText.text = score.ToString();
                 powerupTimer.text = "+5 SCORE!!!";
                 StartCoroutine(PowerupCooldown("invincibility"));
                 random = "";
@@ -368,18 +368,15 @@ public class GameController : MonoBehaviour
             {
                 random = "Wall";
             }
-
-            Debug.Log(random);
             Hit(random);
         }
 
         //Ends game if obstacle is hit
         else if (whatWasSent == "Snake")
-        {
-            //Idea for 'power up' code
+        {   //checks if invincibility is active
             if (isInvincible == false)
             {
-                CancelInvoke("TimerInvoke");
+                CancelInvoke("TimerInvoke");           
                 gameOverPanel.SetActive(true);
             }
         }
@@ -387,6 +384,7 @@ public class GameController : MonoBehaviour
         {
             CancelInvoke("TimerInvoke");
             gameOverPanel.SetActive(true);
+
         }
     }
 

@@ -7,11 +7,12 @@ public class ArcadeInfo : MonoBehaviour {
     public GameObject arcadeInfo;
 
 	// Use this for initialization
-	void Start () {
-		if(GameController.gameMode == 2)
+	void Update() {
+		if(GameModesMenu.gameMode == 2)
         {
             Time.timeScale = 0f;
             arcadeInfo.SetActive(true);
+            Debug.Log("activated");
         }
 	}
 
@@ -19,5 +20,6 @@ public class ArcadeInfo : MonoBehaviour {
     {
         Time.timeScale = 1.0f;
         arcadeInfo.SetActive(false);
+        Debug.Log("activatedsdsads");
     }
 }
