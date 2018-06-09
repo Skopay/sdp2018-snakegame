@@ -24,5 +24,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Borderless Map.unity
     guid: d23ddee580f8ced40a20cd599ad93ba4
+<<<<<<< HEAD
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_configObjects: {}

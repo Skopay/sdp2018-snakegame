@@ -43,10 +43,14 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 1536
     height: 731
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
+  controlID: 62
+=======
   controlID: 9
+<<<<<<< HEAD
 =======
     width: 1280
     height: 587
@@ -55,6 +59,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 93
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -70,9 +77,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1186
+=======
+    x: 1090
+>>>>>>> parent of e40e74c1... Game Over Menu
     y: 0
-    width: 350
+    width: 446
     height: 731
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -106,6 +117,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 296
     height: 442
   m_MinSize: {x: 200, y: 200}
@@ -116,6 +128,18 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    width: 242
+    height: 389
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 202
+    height: 312
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -137,6 +161,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 442
     width: 1186
     height: 289
@@ -145,6 +170,11 @@ MonoBehaviour:
     width: 1003
     height: 271
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    y: 389
+    width: 1090
+    height: 342
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
@@ -236,11 +266,16 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1186
+=======
+    width: 1090
+>>>>>>> parent of e40e74c1... Game Over Menu
     height: 731
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 85
 =======
     width: 1003
@@ -250,6 +285,13 @@ MonoBehaviour:
   vertical: 1
   controlID: 94
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+<<<<<<< HEAD
+  controlID: 63
+=======
+  controlID: 10
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,6 +311,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1186
     height: 442
   m_MinSize: {x: 404, y: 221}
@@ -283,6 +326,18 @@ MonoBehaviour:
   vertical: 0
   controlID: 95
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    width: 1090
+    height: 389
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+  vertical: 0
+<<<<<<< HEAD
+  controlID: 64
+=======
+  controlID: 11
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,6 +353,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 296
     y: 0
     width: 890
@@ -308,6 +364,12 @@ MonoBehaviour:
     width: 487
     height: 316
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    x: 242
+    y: 0
+    width: 848
+    height: 389
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
@@ -337,10 +399,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 468
-    y: 181
-    width: 973
-    height: 501
+    x: 234
+    y: 92
+    width: 697
+    height: 295
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -364,6 +426,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 534
     width: 1184
     height: 268
@@ -372,6 +435,11 @@ MonoBehaviour:
     width: 1001
     height: 250
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    y: 481
+    width: 1088
+    height: 321
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -385,16 +453,25 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+<<<<<<< HEAD
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
+=======
+    - Assets/Scripts/GameScripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts/GameScripts
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\hayde\OneDrive\Documents\GitHub\sdp2018-snakegame\SnakeGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 41}
     m_SelectedIDs: 78370000
@@ -406,6 +483,18 @@ MonoBehaviour:
     m_LastClickedID: 17460
     m_ExpandedIDs: 0000000016370000e2370000fa390000943a0000d63b0000e63d00008e3e0000163f0000ca4100008c42000034440000d2470000d4470000d647000000ca9a3bffffff7f
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 482a0000
+    m_LastClickedID: 10824
+    m_ExpandedIDs: 00000000482a0000162b0000302d0000cc2d00000e2f000022310000ca310000523200000a350000ce350000763700005e3b0000603b0000623b000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 20.000122}
+    m_SelectedIDs: 302b0000
+    m_LastClickedID: 11056
+    m_ExpandedIDs: 000000004a2a0000322d0000ce2d0000102f000024310000543200000a3500007637000034390000363900003839000000ca9a3bffffff7f
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -434,10 +523,17 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000004a2a0000182b0000322d0000ce2d0000102f000024310000cc310000543200000c350000d035000078370000603b0000623b0000643b0000
 =======
     m_ExpandedIDs: 0000000016370000e2370000fa390000943a0000d63b0000e63d00008e3e0000163f0000ca4100008c42000034440000d2470000d4470000d6470000
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    m_ExpandedIDs: 00000000482a0000162b0000302d0000cc2d00000e2f000022310000ca310000523200000a350000ce350000763700005e3b0000603b0000623b0000
+=======
+    m_ExpandedIDs: 000000004a2a0000322d0000ce2d0000102f000024310000543200000a35000076370000343900003639000038390000
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -464,12 +560,17 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
     m_ExpandedInstanceIDs: c623000000000000
 =======
     m_ExpandedInstanceIDs: c6230000
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> parent of e40e74c1... Game Over Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -496,10 +597,14 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_DirectoriesAreaWidth: 201
 =======
   m_DirectoriesAreaWidth: 115
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+  m_DirectoriesAreaWidth: 206
+>>>>>>> parent of e40e74c1... Game Over Menu
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -521,9 +626,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1188
+=======
+    x: 1092
+>>>>>>> parent of e40e74c1... Game Over Menu
     y: 92
-    width: 348
+    width: 444
     height: 710
 =======
     x: 1005
@@ -564,6 +673,7 @@ MonoBehaviour:
     x: 0
     y: 92
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 294
     height: 421
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -582,6 +692,22 @@ MonoBehaviour:
     m_LastClickedID: 0
     m_ExpandedIDs: 4ef1f7ffcc8afbff8496fbff72a3fbffdca5fbffd8ecfcff36f5fcff9482fdff3ef4fdff10f6fdff9814feffd215feffd216feffd62cfeffb62dfeff282efeffe02ffefff42ffefffc2ffeff2c30feff2c3bfeff4269feff3a6afeffaca5feff56f7feff80fdfeff1828ffff302bffff5c2dffff8645ffff105afffff25affff625bffff1a5dffff2e5dffff505dffff665dffffc89cffffb89effff20a3fffff8a5ffff9ea9fffffeabffff7acaffff78cbffff14d6ffff00000000f4480000cc490000504b0000089300000a9400000c950000d6960000d09d0000d49f000010a10000f4c20000a4c30000fac5000096c600009ed3000026d4000042d400009ae30000a4e30000d4e6000004ea00006af300004cfc0000e0ff00008a27010054290100e82c0100ec2e0100
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    width: 240
+    height: 368
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+    m_SelectedIDs: 763a0000
+    m_LastClickedID: 14966
+    m_ExpandedIDs: eafbffff00000000fe3700002e390000da390000fc3900003e3a0000
+=======
+    m_SelectedIDs: 4a060000
+    m_LastClickedID: 0
+    m_ExpandedIDs: f8f3ffffe8fbffff00000000
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Random
@@ -626,12 +752,17 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 298
+=======
+    x: 244
+>>>>>>> parent of e40e74c1... Game Over Menu
     y: 92
-    width: 886
-    height: 421
+    width: 844
+    height: 368
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
+<<<<<<< HEAD
   lastFramingTime: 0
 =======
     x: 518
@@ -642,10 +773,14 @@ MonoBehaviour:
   m_SceneLighting: 1
   lastFramingTime: 19461.679685895066
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+  lastFramingTime: 20692.617878909175
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 0.38911587, y: 0.24097656, z: 0.005273214}
     speed: 2
@@ -655,6 +790,16 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 90}
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    m_Target: {x: -0.6113962, y: 0.25552952, z: 89.98242}
+    speed: 2
+    m_Value: {x: -0.6113962, y: 0.25552952, z: 89.98242}
+=======
+    m_Target: {x: -2.3521748, y: -0.077974945, z: 80.18455}
+    speed: 2
+    m_Value: {x: -2.3521748, y: -0.077974945, z: 80.18455}
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -687,6 +832,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 10.955136
     speed: 2
     m_Value: 10.955136
@@ -695,6 +841,16 @@ MonoBehaviour:
     speed: 2
     m_Value: 33.076614
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    m_Target: 12.464049
+    speed: 2
+    m_Value: 12.464049
+=======
+    m_Target: 14.730519
+    speed: 2
+    m_Value: 14.730519
+>>>>>>> d1fce6dc46be03b5e0d977ad31240bc3836ae207
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -727,6 +883,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 298
     y: 92
     width: 886
@@ -737,6 +894,12 @@ MonoBehaviour:
     width: 483
     height: 295
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    x: 244
+    y: 92
+    width: 844
+    height: 368
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -746,6 +909,7 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -443
     m_HBaseRangeMax: 443
@@ -757,6 +921,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -139
     m_VBaseRangeMax: 139
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    m_HBaseRangeMin: -422
+    m_HBaseRangeMax: 422
+    m_VBaseRangeMin: -175.5
+    m_VBaseRangeMax: 175.5
+>>>>>>> parent of e40e74c1... Game Over Menu
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -774,6 +944,7 @@ MonoBehaviour:
       x: 0
       y: 17
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 886
       height: 404
     m_Scale: {x: 1, y: 1}
@@ -784,12 +955,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 241.5, y: 139}
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+      width: 844
+      height: 351
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 422, y: 175.5}
+>>>>>>> parent of e40e74c1... Game Over Menu
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -443
       y: -202
@@ -801,15 +979,25 @@ MonoBehaviour:
       width: 483
       height: 278
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+      x: -422
+      y: -175.5
+      width: 844
+      height: 351
+>>>>>>> parent of e40e74c1... Game Over Menu
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 886, y: 421}
 =======
   m_LastWindowPixelSize: {x: 483, y: 295}
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+  m_LastWindowPixelSize: {x: 844, y: 368}
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -835,6 +1023,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 534
     width: 1223
     height: 268
@@ -843,4 +1032,9 @@ MonoBehaviour:
     width: 1001
     height: 250
 >>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
+=======
+    y: 404
+    width: 907
+    height: 254
+>>>>>>> parent of e40e74c1... Game Over Menu
   m_PersistentViewDataDictionary: {fileID: 0}
