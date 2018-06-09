@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     public GameObject snakePrefab;
     public Snake head;
     public Snake tail;
+    public GameObject gameOverPanel;
 
     //Public variables that'll help with the algorithm of the game
     //Bounds of which the food will spawn
@@ -29,6 +30,8 @@ public class GameController : MonoBehaviour
     //Used to display the current score on the UI and store the value
     public int score;
     public Text scoreText;
+    public Text pauseScoreText;
+    public Text finalScoreText;
     //Custom value for calculating the Snake's speed
     public static float deltaTimer;
     //Used for placing the Food and Snake object in the correct X and Y coordinate
@@ -37,17 +40,13 @@ public class GameController : MonoBehaviour
     public bool isInvincible;
     public float powerupCountdownValue;
     public Text powerupTimer;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     //Game mode reference
-    public int gameMode;
-=======
+    public static int gameMode;
+
     //gamemode value, 1 = arcade, 2 = classic, 3 = speedattack
-    public int gameMode = 2;
     public float arcadeSpeed;
->>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
-=======
->>>>>>> parent of e40e74c1... Game Over Menu
+
 
     //Runs the Hit() script when hit is activated
     private void OnEnable()
@@ -65,17 +64,17 @@ public class GameController : MonoBehaviour
 
         //This is the code that'll decide if you're playing the normal gamemode or if you're playing "Speedattack", once this if statement
         //has been corrected, then you can uncomment 203 also which will be all the code needed for "Speedattack"
-        /*if (gameMode == 1 ..... classic mode) {
+        if (gameMode == 1) {
             InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
         }
-        else if (gameMode == 2 ..... arcade mode) {
+        else if (gameMode == 2) {
         float arcadeSpeed = PlayerPrefs.GetFloat("Speed");
             InvokeRepeating("TimerInvoke", 1, arcadeSpeed);
         }
-        else if (gameMode == 3) .... speedattack
+        else if (gameMode == 3)
         {
-        InvokeRepeating("TimerInvoke", 1, deltaTimer;
-        }*/
+        InvokeRepeating("TimerInvoke", 1, deltaTimer);
+        }
     }
 
     //Disables the Hit() script when it has finished running
@@ -320,10 +319,14 @@ public class GameController : MonoBehaviour
 
             maxSize++;
             score++;
+            Debug.Log(score);
             scoreText.text = score.ToString();
+            pauseScoreText.text = score.ToString();
+            finalScoreText.text = score.ToString();
             FoodFunction();
             //Compares the current highscore to the current score and updates it if there is a change
             int temp = PlayerPrefs.GetInt("HighScore");
+            PlayerPrefs.SetInt("PreviousScore", score);
             if (score > temp)
             {
                 PlayerPrefs.SetInt("HighScore", score);
@@ -377,13 +380,13 @@ public class GameController : MonoBehaviour
             if (isInvincible == false)
             {
                 CancelInvoke("TimerInvoke");
-                SceneManager.LoadScene(0);
+                gameOverPanel.SetActive(true);
             }
         }
         else if (whatWasSent == "Wall")
         {
             CancelInvoke("TimerInvoke");
-            SceneManager.LoadScene(0);
+            gameOverPanel.SetActive(true);
         }
     }
 

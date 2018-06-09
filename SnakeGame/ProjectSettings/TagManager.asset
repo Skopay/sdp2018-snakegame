@@ -8,8 +8,6 @@ TagManager:
   - Food
   - Wall
   - Invincibility
-  - IncreaseSpeed
-  - Random
   layers:
   - Default
   - TransparentFX
