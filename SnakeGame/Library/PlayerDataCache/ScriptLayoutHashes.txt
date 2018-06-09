@@ -4,6 +4,8 @@ C:/Users/hayde/OneDrive/Documents/GitHub/sdp2018-snakegame/SnakeGame/Snake.apk
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/BasicMap.unity
+Assets/Scenes/Borderless Map.unity
+Assets/Scenes/AdvancedMap.unity
 SceneListEnd?
 75cd0c6c744b9733ef29aa6c59ece2b1 Assembly-CSharp.dll:TMPro.Examples.VertexZoom
 8b495f223d466f01008cc215e2d9dbab Assembly-CSharp.dll:.Snake
@@ -229,6 +231,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.TextConsoleSimulator
 75cd0c6c744b9733ef29aa6c59ece2b1 Assembly-CSharp.dll:TMPro.Examples.VertexShakeB
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MapSelectionMenu
 afc52d27c3ec0bd47909e81bd45fbffa Assembly-CSharp.dll:TMPro.TMP_TextEventHandler
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.VertexColorCycler
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner

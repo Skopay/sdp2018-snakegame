@@ -15,7 +15,7 @@ public class Snake : MonoBehaviour{
             objectTag = other.tag;
         }
         //Destroys the current food object
-        if(other.tag == "Food" || other.tag == "Invincibility")
+        if(other.tag == "Food" || other.tag == "Invincibility" || other.tag == "Random" || other.tag == "IncreaseSpeed")
         {
            Destroy(other.gameObject);
         }

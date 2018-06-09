@@ -1419,14 +1419,22 @@ MonoBehaviour:
   foodPrefab: {fileID: 1902107210777826, guid: 9fd48499fbec0874292ebbd1487780b3, type: 2}
   currentFood: {fileID: 0}
   powerup: {fileID: 0}
-  powerupPrefab: {fileID: 1793537962374984, guid: 673395e74a011c443a5e40ec96f44dd1,
+  invincibilityPrefab: {fileID: 1793537962374984, guid: 673395e74a011c443a5e40ec96f44dd1,
+    type: 2}
+  randomPrefab: {fileID: 1006164794442082, guid: 2c411aca25e638048ad78749787e1239,
+    type: 2}
+  increaseSpeedPrefab: {fileID: 1455535506559152, guid: de39bf008031eca4995f30d6d2b4d167,
     type: 2}
   snakePrefab: {fileID: 1246182875553888, guid: 363534778d99ef54aae8c8d47dc33073,
     type: 2}
   head: {fileID: 1484964497}
   tail: {fileID: 1484964497}
+<<<<<<< HEAD
   gameOverPanel: {fileID: 401643223}
   xBound: 11
+=======
+  xBound: 8
+>>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
   yBound: 3
   maxSize: 4
   currentSize: 1
@@ -1437,7 +1445,12 @@ MonoBehaviour:
   isInvincible: 0
   powerupCountdownValue: 0
   powerupTimer: {fileID: 1921670877}
+<<<<<<< HEAD
   gameMode: 0
+=======
+  gameMode: 2
+  arcadeSpeed: 0
+>>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
 --- !u!4 &881152294
 Transform:
   m_ObjectHideFlags: 0
@@ -3046,10 +3059,17 @@ RectTransform:
   m_Father: {fileID: 401643224}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -100, y: -90}
   m_SizeDelta: {x: 160, y: 30}
+=======
+  m_AnchorMin: {x: 0.1275, y: 0.85164213}
+  m_AnchorMax: {x: 0.73075, y: 0.9761413}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+>>>>>>> 47bbc73c730f3dbbd3041cffe26660e962729594
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890213835
 MonoBehaviour:
