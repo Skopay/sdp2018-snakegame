@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
     public GameObject snakePrefab;
     public Snake head;
     public Snake tail;
+    public GameObject gameOverPanel;
 
     //Public variables that'll help with the algorithm of the game
     //Bounds of which the food will spawn
@@ -35,6 +36,8 @@ public class GameController : MonoBehaviour
     public bool isInvincible;
     public float powerupCountdownValue;
     public Text powerupTimer;
+    //Game mode reference
+    public int gameMode;
 
     //Runs the Hit() script when hit is activated
     private void OnEnable()
@@ -273,13 +276,13 @@ public class GameController : MonoBehaviour
             if (isInvincible == false)
             {
                 CancelInvoke("TimerInvoke");
-                SceneManager.LoadScene(0);
+                gameOverPanel.SetActive(true);
             }
         }
         else if (whatWasSent == "Wall")
         {
             CancelInvoke("TimerInvoke");
-            SceneManager.LoadScene(0);
+            gameOverPanel.SetActive(true);
         }
     }
 
