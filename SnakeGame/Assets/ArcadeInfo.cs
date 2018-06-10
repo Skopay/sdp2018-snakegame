@@ -6,7 +6,7 @@ public class ArcadeInfo : MonoBehaviour {
 
     public GameObject arcadeInfo;
 
-	// Use this for initialization
+	//Checks if arcade mode is active and displays the info screen
 	void Update() {
 		if(GameModesMenu.gameMode == 2)
         {
@@ -16,6 +16,7 @@ public class ArcadeInfo : MonoBehaviour {
         }
 	}
 
+    //Begins the game
     public void Continue ()
     {
         Time.timeScale = 1.0f;

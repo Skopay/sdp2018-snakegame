@@ -8,7 +8,7 @@ public class HighScoreMenu : MonoBehaviour {
     public Text highScore;
     public Text previousScore;
 
-	// Use this for initialization
+	// Displays the highscore and previous score of the user
 	void Start () {
         highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
         previousScore.text = PlayerPrefs.GetInt("PreviousScore").ToString();
