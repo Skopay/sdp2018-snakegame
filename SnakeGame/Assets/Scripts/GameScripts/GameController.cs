@@ -55,8 +55,7 @@ public class GameController : MonoBehaviour
     // Use this for initialization. Constantly repeats the TimerInvoke() method
     void Start()
     {
-        //This is the code that'll decide if you're playing the normal gamemode or if you're playing "Speedattack", once this if statement
-        //has been corrected, then you can uncomment 203 also which will be all the code needed for "Speedattack"
+        //Run the game for the particular game mode
         if (GameModesMenu.gameMode == 1 || GameModesMenu.gameMode == 0)
         {
             InvokeRepeating("TimerInvoke", 1, PlayerPrefs.GetFloat("Speed"));
@@ -108,6 +107,7 @@ public class GameController : MonoBehaviour
         }
     }
 
+    //Begins the game
     public void Continue()
     {
         Time.timeScale = 1.0f;
@@ -306,7 +306,7 @@ public class GameController : MonoBehaviour
     {
         if (whatWasSent == "Food")
         {
-            //Increases Snake speed to a limit (used in "Speedattack mode"
+            //Increases Snake speed to a limit (used in "Speedattack mode")
 
             if (GameModesMenu.gameMode == 3)
             {
@@ -331,12 +331,12 @@ public class GameController : MonoBehaviour
             {
                 PlayerPrefs.SetInt("HighScore", score);
             }
-        }
+        } //Applies invincibility powerup
         else if (whatWasSent == "Invincibility")
         {
             isInvincible = true;
             StartCoroutine(InvincibilityCountdown());
-        }
+        } //Applies speed powerup
         else if (whatWasSent == "IncreaseSpeed")
         {
             float haultMovement = arcadeSpeed;
@@ -344,7 +344,7 @@ public class GameController : MonoBehaviour
             CancelInvoke("TimerInvoke");
             InvokeRepeating("TimerInvoke", haultMovement, arcadeSpeed);
             StartCoroutine(PowerupCooldown("increaseSpeed"));
-        }
+        } //Applies random powerup
         else if (whatWasSent == "Random")
         {
             string random = "";
@@ -405,6 +405,7 @@ public class GameController : MonoBehaviour
 
     }
 
+    //Cooldowns for powerups
     public IEnumerator PowerupCooldown(string powerupType)
     {
         if (powerupType == "invincibility")

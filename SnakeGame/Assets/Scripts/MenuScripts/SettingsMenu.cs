@@ -12,7 +12,6 @@ public class SettingsMenu : MonoBehaviour
     public Slider difficulty;
     public Toggle mute;
     public AudioSource source;
-    public AudioMixer audioMixer;
 
     //Sets default values for settings
     public void Start()
@@ -24,9 +23,7 @@ public class SettingsMenu : MonoBehaviour
     //Uses value of slider to set the volume
     public void SetVolume(float volume)
     {
-        //audioMixer.SetFloat("MasterVolume", volume);
         source.volume = volume;
-        //Debug.Log(volume);
         MuteGame();
     }
 
@@ -36,7 +33,6 @@ public class SettingsMenu : MonoBehaviour
         if (mute.isOn)
         {
             source.volume = volume.minValue;
-            //audioMixer.SetFloat("MasterVolume", volume.minValue);
         }
     }
 
@@ -46,7 +42,6 @@ public class SettingsMenu : MonoBehaviour
         if (mute.isOn == false)
         {
             source.volume = volume.value;
-            //audioMixer.SetFloat("MasterVolume", volume.value);
         }
     }
 
@@ -55,6 +50,5 @@ public class SettingsMenu : MonoBehaviour
     {
         GameController.deltaTimer = difficulty.value;
         PlayerPrefs.SetFloat("Speed", GameController.deltaTimer);
-        //Debug.Log(difficulty.value);
     }
 }

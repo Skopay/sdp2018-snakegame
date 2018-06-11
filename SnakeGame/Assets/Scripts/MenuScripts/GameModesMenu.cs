@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class GameModesMenu : MonoBehaviour
 {
-
+    //Toggles controlling the game type selected
     public Toggle classic;
     public Toggle arcade;
     public Toggle speedAttack;
+    
+    //Reference to certain game mode
     public static int gameMode;
 
-    // Use this for initialization
+    // Updates which game mode is selected
     void Update()
     {
 
