@@ -10,7 +10,7 @@ MENU SCREEN:
 
 -The Highscore button will display your highscore and the previous score of the last game you played.
 
--The Settings menu allows you to edit the difficulty (speed of the Snake) for the Classic game mode, and also adjust the volume of the
+-The Settings menu allows you to edit the difficulty (speed of the Snake) for the Classic game mode, and also adjust the
 volume of the game itself.
 
 -The Quit button will return you back to the AUT Application.
