@@ -21,9 +21,8 @@ volume of the game itself.
 
 GAMEPLAY:
 
--Classic mode: Your objective is to simply to pick up the food that spawns on the map to score points. Each piece of Food you pick up
-gives you a point, but your Snake also increases in size! Try get as many points as possible, but avoid hitting the walls or your tail,
-or else it's Game Over!
+-Classic mode: Your objective is to simply to pick up the food that spawns on the map to score points. Each piece of food you pick up
+gives you a point, but your snake also increases in size! Try get as many points as possible, but avoid hitting the walls, and your tail, or else it's Game Over!
 
 -Arcade mode: Similar to Classic but with the twist of powerups! There are 3 powerups that spawn on the maps. Invincibility, which makes
 your Snake able to pass through it's tail for a limited amount of time. Speed Boost, increasing the speed of your Snake and the fun! 
